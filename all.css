@@ -44,3 +44,41 @@ table {
 *,*:before,*:after{
 	box-sizing:border-box;
 }
+
+:root{
+	--border-radius-1:5px;
+	--border-radius-2:10px;
+}
+.wrap{
+	max-width:1200px;
+	height:500px;
+	border:0.3px solid #909090;
+}
+.banner{
+	width:1200px;
+	height:200px;
+	background-image:url('./images/1200X200-8.png') ;
+}
+.menu-bar{
+	max-width:1200px;
+	height:30px;
+	background-color: rgb(219, 209, 196);
+	display:flex;
+	justify-content: center;
+}
+.menu-bar .nav{
+	width:500px;
+	height:30px;
+	display:flex;
+	text-align: center;
+	background-color: #898260;
+	box-sizing: border-box;
+	border-radius: var(--border-radius-1);
+}
+.nav .li{
+	background-color: #f6cbcb;
+	width:90px;
+	line-height:24px;
+	margin:3px 5px;
+	border-radius: var(--border-radius-1);
+}
