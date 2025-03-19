@@ -27,7 +27,8 @@ body {
 	line-height: 1;
 }
 ol, ul {
-	list-style-type: none;
+	list-style-type:none;
+	list-style-position:inside ;
 }
 blockquote, q {
 	quotes: none;
@@ -51,8 +52,10 @@ table {
 }
 .wrap{
 	max-width:1200px;
-	height:500px;
+	height:750px;
 	border:0.3px solid #909090;
+	margin:auto;
+    background-image:linear-gradient(45deg, #d6aacb, #fefada, #c9ab76);
 }
 .banner{
 	width:1200px;
@@ -67,18 +70,72 @@ table {
 	justify-content: center;
 }
 .menu-bar .nav{
-	width:500px;
+	width:493px;
 	height:30px;
 	display:flex;
 	text-align: center;
 	background-color: #898260;
 	box-sizing: border-box;
 	border-radius: var(--border-radius-1);
+	position:relative;
 }
 .nav .li{
 	background-color: #f6cbcb;
-	width:90px;
+	width:84px;
+	height:24px;
 	line-height:24px;
-	margin:3px 5px;
+	margin:3px 7px;
 	border-radius: var(--border-radius-1);
+	box-shadow: 0 0 2px 1.5px #fff;
+	cursor: pointer;
+}
+.nav .li a:hover{
+	color:#ffff00;
+}
+.ul1{
+    position:absolute;
+	top:40px;
+	left:1px;
+	width:90px;
+	height:auto;
+	background-image:linear-gradient(45deg, #d6aacb,
+		#f9f1b2);
+	 display:none;
+}
+.ul2{
+	position: absolute;
+	top: 40px;
+	left: 100px;
+	width: 90px;
+	height: auto;
+	background-image: linear-gradient(45deg, #d6aacb,
+			#f9f1b2);
+	display:none;
+}
+/*.ul3不能有上一層:li .ul3,這樣不成*/
+.ul3{
+	position: absolute;
+	top: 40px;
+	left:195px;
+	width:100px;
+	height: auto;
+	background-image: linear-gradient(45deg, #d6aacb,
+			#f9f1b2);
+	display: none;
+}
+.li li{
+	border-bottom: 0.5px solid #fff;
+	text-align: left;
+	padding:5px;
+	list-style-type: circle;
+	list-style-position: inside;
+	cursor: pointer;
+}
+.li li a{
+	text-decoration: none;
+	color:#00000080;
+}
+
+.hide, .hide1, .hide2{
+	display:block;
 }
