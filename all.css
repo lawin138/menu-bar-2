@@ -123,6 +123,11 @@ table {
 			#f9f1b2);
 	display: none;
 }
+.hide,
+.hide1,
+.hide2 {
+	display: block;
+}
 .li li{
 	border-bottom: 0.5px solid #fff;
 	text-align: left;
@@ -134,8 +139,4 @@ table {
 .li li a{
 	text-decoration: none;
 	color:#00000080;
-}
-
-.hide, .hide1, .hide2{
-	display:block;
 }
