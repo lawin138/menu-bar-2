@@ -6,9 +6,12 @@ let btn3 =document.querySelector('#btn3');
 let ul3 =document.querySelector('.ul3');
 
 
-btn1.addEventListener('click',()=>{    
+btn1.addEventListener('click',e=>{
+    e.preventDefault()    
     ul1.classList.toggle('hide')
 })
+    
+       
 btn2.addEventListener('click', function(){
     ul2.classList.toggle('hide1')
 });
