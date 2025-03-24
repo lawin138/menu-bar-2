@@ -110,7 +110,7 @@ table {
 	height: auto;
 	background-image: linear-gradient(45deg, #d6aacb,
 			#f9f1b2);
-	display:none;
+	display: none;
 }
 /*.ul3不能有上一層:li .ul3,這樣不成*/
 .ul3{
@@ -121,7 +121,7 @@ table {
 	height: auto;
 	background-image: linear-gradient(45deg, #d6aacb,
 			#f9f1b2);
-	display: none; 
+	display: none;
 }
 .hide,
 .hide1,
